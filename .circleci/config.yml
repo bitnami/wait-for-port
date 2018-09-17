@@ -8,6 +8,7 @@ jobs:
     steps:
       - checkout
       - run: make get-build-deps
+      - run: make dep-ensure
       - run: make vet
       - run: make lint
       - run: make cover
