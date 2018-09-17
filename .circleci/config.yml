@@ -1,0 +1,17 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/golang:1.9
+
+    working_directory: /go/src/github.com/bitnami/wait-for-port
+    steps:
+      - checkout
+      - run: make get-build-deps
+      - run: make vet
+      - run: make lint
+      - run: make cover
+      - run: make build
+      - store_artifacts:
+          path: /go/src/github.com/bitnami/wait-for-port/out/wait-for-port
+          destination: wait-for-port
