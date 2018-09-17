@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/bitnami/wait-for-port.svg?style=svg)](https://circleci.com/gh/bitnami/wait-for-port)
+
 # wait-for-port
 
 This tool allows waiting for a port to enter into the requested state (free or in use), with a customizable timeout
