@@ -18,6 +18,9 @@ all:
 build:
 	@go build -ldflags="-s -w" -o $(TOOL_PATH)
 
+build/arm64:
+	@GOARCH=arm64 go build -ldflags="-s -w" -o $(BUILD_DIR)/arm64/$(TOOL_NAME)
+
 clean:
 	@rm -rf $(BUILD_DIR)
 

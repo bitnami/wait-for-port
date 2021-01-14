@@ -13,6 +13,10 @@ jobs:
       - run: make lint
       - run: make cover
       - run: make build
+      - run: make build/arm64
       - store_artifacts:
           path: /go/src/github.com/bitnami/wait-for-port/out/wait-for-port
           destination: wait-for-port
+      - store_artifacts:
+          path: /go/src/github.com/bitnami/wait-for-port/out/arm64/wait-for-port
+          destination: wait-for-port-arm64
