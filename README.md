@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/bitnami/wait-for-port.svg?style=svg)](https://circleci.com/gh/bitnami/wait-for-port)
+[![CI](https://github.com/bitnami/wait-for-port/actions/workflows/main.yml/badge.svg)](https://github.com/bitnami/wait-for-port/actions/workflows/main.yml)
 
 # wait-for-port
 
