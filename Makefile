@@ -30,6 +30,7 @@ download:
 
 get-build-deps:
 	@echo "+ Downloading build dependencies"
+	@go install golang.org/x/tools/cmd/goimports@latest
 	@go install honnef.co/go/tools/cmd/staticcheck@latest
 
 vet:
