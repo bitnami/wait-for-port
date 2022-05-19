@@ -174,7 +174,6 @@ func Test_isInUse(t *testing.T) {
 		t.Fatalf("cannot take port %d: %v", takenPort, err)
 	}
 	type args struct {
-		ctx  context.Context
 		host string
 
 		port int
