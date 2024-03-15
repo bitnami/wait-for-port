@@ -1,3 +1,4 @@
+[![Go Report Card](https://goreportcard.com/badge/github.com/bitnami/wait-for-port)](https://goreportcard.com/report/github.com/bitnami/wait-for-port)
 [![CI](https://github.com/bitnami/wait-for-port/actions/workflows/main.yml/badge.svg)](https://github.com/bitnami/wait-for-port/actions/workflows/main.yml)
 
 # wait-for-port
@@ -56,7 +57,7 @@ $ echo $?
 
 ## The tool times out before the port goes into the required state
 
-If the port does not go into the required state under the provided timeout time, the process will retur a non-zero exit code
+If the port does not go into the required state under the provided timeout time, the process will return a non-zero exit code
 so it is easily recognizable from a parent process:
 
 ```console
