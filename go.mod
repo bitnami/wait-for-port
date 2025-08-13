@@ -1,6 +1,6 @@
 module github.com/bitnami/wait-for-port
 
-go 1.24
+go 1.25
 
 require (
 	github.com/jessevdk/go-flags v1.6.1
