@@ -81,7 +81,7 @@ jobs:
                 ) >> "$digest_file"
               done
           }
-          assets=( ./artifacts/built-binaries/*.gz )
+          assets=( ./artifacts/*.gz )
 
           tag_name="${{ steps.vars.outputs.tag }}"
           checksums_file="${tag_name}_checksums.txt"
